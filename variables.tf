@@ -6,6 +6,7 @@ variable "WORKSPACE_NAME" {
 variable "TIER" {
   type        = string
   description = "Resource group name"
+  default = "standard"
 }
 
 variable "RESOURCE_GROUP_NAME" {
