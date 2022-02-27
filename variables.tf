@@ -1,17 +1,26 @@
-variable "databricks_workspace_url" {
-  description = "The URL to the Azure Databricks workspace (must start with https://)"
-  type = string
-  default = "<Azure Databricks workspace URL>"
+variable "WORKSPACE_NAME" {
+  type        = string
+  description = "workspaceName"
 }
 
-variable "resource_prefix" {
-  description = "The prefix to use when naming the notebook and job"
-  type = string
-  default = "terraform-demo"
+variable "TIER" {
+  type        = string
+  description = "Resource group name"
 }
 
-variable "email_notifier" {
-  description = "The email address to send job status to"
-  type = list(string)
-  default = ["<Your email address>"]
+variable "RESOURCE_GROUP_NAME" {
+  type        = string
+  description = "Resource group name"
 }
+
+variable "LOCATION" {
+  type        = string
+  description = "Resources location"
+}
+
+variable "TAGS" {
+  type        = map(string)
+  description = "Tags for resources {key:value}"
+}
+
+
