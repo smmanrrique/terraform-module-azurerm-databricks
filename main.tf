@@ -5,7 +5,7 @@ resource "random_string" "naming" {
 }
 
 resource "azurerm_databricks_workspace" "databricks_workspace" {
-  name                        = "${var.WORKSPACE_NAME}dw"
+  name                        = "${var.WORKSPACE_NAME}databricksw"
   resource_group_name         = var.RESOURCE_GROUP_NAME
   location                    = var.LOCATION
   sku                         = var.TIER
