@@ -13,3 +13,4 @@ resource "azurerm_databricks_workspace" "databricks_workspace" {
   tags                        = var.TAGS
 }
 
+
